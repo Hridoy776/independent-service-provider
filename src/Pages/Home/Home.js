@@ -10,7 +10,9 @@ const Home = () => {
             <h1>services</h1>
             <Row>
                 {
-                    services.map(service=><Services key={service.id} service={service}></Services>)
+                    services.map(service=><Services
+                         key={service.id}
+                         service={service}></Services>)
                 }
             </Row>
         </section>
