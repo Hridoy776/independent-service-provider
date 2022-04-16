@@ -7,6 +7,8 @@ import Blog from './Pages/Blog/Blog';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Header from './Shared/Header/Header';
+import Footer from './Shared/Footer/Footer';
+import Packages from './Pages/Packages/Packages';
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
         <Route path='/' element={<Home></Home>}/>
         <Route path='/home' element={<Home></Home>}/>
         <Route path='/aboutme' element={<AboutMe></AboutMe>}/>
+        <Route path='/packages' element={<Packages></Packages>}/>
         <Route path='/blog' element={<Blog></Blog>}/>
         <Route path='/login' element={<Login></Login>}/>
         <Route path='*' element={<NotFound></NotFound>}/>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

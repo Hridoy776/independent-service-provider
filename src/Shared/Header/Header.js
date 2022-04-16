@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-  <Navbar.Brand as={Link} to='/home'>React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand as={Link} to='/home'>Parfect passion</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
@@ -21,8 +21,10 @@ const Header = () => {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link as={NavLink} to="/aboutme">About me</Nav.Link>
+      <Nav.Link as={NavLink} to ="/home" > Home</Nav.Link>
       <Nav.Link as={NavLink} to ="/blog" > Blog</Nav.Link>
+      <Nav.Link as={NavLink} to ="/packages" >Packages</Nav.Link>
+      <Nav.Link as={NavLink} to="/aboutme">About me</Nav.Link>
       <Nav.Link as={NavLink} to ="/login" > Login</Nav.Link>
     </Nav>
   </Navbar.Collapse>
