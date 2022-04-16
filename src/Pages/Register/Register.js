@@ -2,15 +2,15 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
-const Login = () => {
-    const navigate =useNavigate()
-    const navigateSignUp=()=>{
-        navigate('/register')
+const Register = () => {
+    const navigate=useNavigate()
+    const navigatelogin=()=>{
+        navigate('/login')
     }
   return (
     <div>
-      <h1 className="text-center text-primary">login</h1>
-      <div className=" mx-auto w-25 ">
+        <h1 className="text-primary text-center">signup</h1>
+      <div className="w-25 mx-auto">
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -28,13 +28,13 @@ const Login = () => {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           <Button variant="primary" type="submit">
-            login
+            Submit
           </Button>
         </Form>
-        <p>new to parfect passion?<Link onClick={navigateSignUp} to="/register" >please signup</Link></p>
+        <p>already have an account?<Link onClick={navigatelogin} to="/login" >please login</Link></p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;
