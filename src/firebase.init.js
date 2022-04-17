@@ -1,3 +1,4 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import{getAuth} from "firebase/auth"
@@ -6,15 +7,15 @@ import{getAuth} from "firebase/auth"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_apiKey,
-  authDomain:process.env.REACT_APP_authDomain,
-  projectId:process.env.REACT_APP_projectId,
-  storageBucket:process.env.REACT_APP_storageBucket,
-  messagingSenderId:process.env.REACT_APP_messagingSenderId,
-  appId:process.env.REACT_APP_appId,
+  apiKey: "AIzaSyAugwbn6pbAIXJBe6OlpqG_ZQziFJtyJro",
+  authDomain: "perfect-passion.firebaseapp.com",
+  projectId: "perfect-passion",
+  storageBucket: "perfect-passion.appspot.com",
+  messagingSenderId: "377294448467",
+  appId: "1:377294448467:web:4f2b26cbb2123d21e963a6"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth=getAuth(app)
+const auth =getAuth(app)
 export default auth;
