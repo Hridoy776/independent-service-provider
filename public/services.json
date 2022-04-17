@@ -4,20 +4,20 @@
       "name": "Photos of Ceremony",
       "price": 255,
       "details": "On-location Photography Session Personal & Styling Recommendations 40 High-res    Artistically Edited Digital ImagesLicense for Unlimited Personal Use$200 Print Credit",
-      "img": "..."
+      "img": "./src/images/services/Hnet.com-image.jpg"
     },
     {
       "id": 2,
       "name": "Photos of Ceremony",
       "price": 255,
       "details": "On-location Photography Session Personal & Styling Recommendations 40 High-res    Artistically Edited Digital ImagesLicense for Unlimited Personal Use$200 Print Credit",
-      "img": "..."
+      "img": "./src/images/services/Hnet.com-image (1).jpg"
     },
     {
       "id": 3,
       "name": "Photos of Ceremony",
       "price": 255,
       "details": "On-location Photography Session Personal & Styling Recommendations 40 High-res    Artistically Edited Digital ImagesLicense for Unlimited Personal Use$200 Print Credit",
-      "img": "..."
+      "img": "./src/images/services/Hnet.com-image (2).jpg"
     }
   ]

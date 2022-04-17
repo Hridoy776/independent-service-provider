@@ -3,6 +3,7 @@ import { Card, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Services = ({service}) => {
+  
   const navigate =useNavigate()
   const navigateCheckOut=()=>{
     navigate(`/service/${service.id}`)
@@ -11,7 +12,7 @@ const Services = ({service}) => {
   return (
     <Col>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={service.img} />
         <Card.Body>
           <Card.Title>{service.name}</Card.Title>
           <Card.Text>price: {service.price}</Card.Text>
