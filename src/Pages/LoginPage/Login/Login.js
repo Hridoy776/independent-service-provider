@@ -1,9 +1,13 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import Google from "../../../images/logo/Google.svg";
+import login from "../../../images/login/ian-schneider-TamMbr4okv4-unsplash.jpg"
 const Login = () => {
   const location = useLocation();
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -17,7 +21,7 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
-  if(user1){
+  if (user1) {
     navigate(from, { replace: true });
   }
   const handleSignIn = (e) => {
@@ -27,19 +31,21 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
   const handleSignInWithGoogle = () => {
-    signInWithGoogle()
+    signInWithGoogle();
   };
   return (
-    <div>
-      <h1 className="text-center text-primary">login</h1>
-      <div className=" mx-auto w-25 ">
-        <Form onSubmit={handleSignIn}>
+    <div className=" vh-100 d-flex flex-column justify-content-center ">
+      <div className=" d-sm-flex container justify-content-center align-items-center  ">
+        <div className="w-50 mx-auto">
+          <img className="w-100" src={login} alt="" />
+          </div>
+        <div className="w-75 mx-auto">
+        <h1 className="text-center text-primary">login</h1>
+        <Form className="w-lg-25 w-50 mx-auto" onSubmit={handleSignIn}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control name="email" type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-            </Form.Text>
+            
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -56,13 +62,16 @@ const Login = () => {
           <Button variant="primary" type="submit">
             login
           </Button>
+          
         </Form>
-        <p>
+        <p className="text-center">
           new to parfect passion?
           <Link onClick={navigateSignUp} to="/register">
             please signup
           </Link>
         </p>
+        </div>
+        
       </div>
       <div className="d-flex justify-content-center align-items-center">
         <div className="my-3">

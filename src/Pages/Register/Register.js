@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
+import signup from "../../images/login/6333213.jpg"
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
@@ -23,10 +24,13 @@ const Register = () => {
         createUserWithEmailAndPassword(email,password)
     }
   return (
-    <div>
+    <div className=" d-sm-flex container justify-content-center align-items-center align-items-center vh-100 ">
+      <div className="w-50 mx-auto">
+          <img className="w-100" src={signup} alt="" />
+          </div>
+      <div className="w-75 mx-auto">
         <h1 className="text-primary text-center">signup</h1>
-      <div className="w-25 mx-auto">
-        <Form onSubmit={handleSignUp}>
+        <Form className="w-lg-25 w-50 mx-auto" onSubmit={handleSignUp}>
           <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>name</Form.Label>
             <Form.Control name='name'  type="text" placeholder="your name" />
@@ -47,7 +51,8 @@ const Register = () => {
             Submit
           </Button>
         </Form>
-        <p>already have an account?<Link onClick={navigatelogin} to="/login" >please login</Link></p>
+          <p className="text-center">already have an account?<Link onClick={navigatelogin} to="/login" >please login</Link></p>
+        
       </div>
     </div>
   );

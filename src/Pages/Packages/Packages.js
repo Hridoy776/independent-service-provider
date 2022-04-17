@@ -2,7 +2,7 @@ import React from 'react';
 
 const Packages = () => {
     return (
-        <div>
+        <div className='vh-100'>
             <p>packages</p>
         </div>
     );
