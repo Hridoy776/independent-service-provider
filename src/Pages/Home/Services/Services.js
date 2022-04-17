@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Services = ({service}) => {
   const navigate =useNavigate()
   const navigateCheckOut=()=>{
-    navigate('/checkout')
+    navigate(`/service/${service.id}`)
   }
     
   return (

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+.title{
+    font-family: 'My Soul', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(233, 13, 233);
+}
