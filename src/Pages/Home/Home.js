@@ -50,7 +50,7 @@ const Home = () => {
       </section>
       <section className="container">
         <h1>services</h1>
-        <Row xs={1} md={2} className="g-4">
+        <Row xs={1} md={2} lg={3} className="g-4">
           {services.map((service) => (
             <Services key={service.id} service={service}></Services>
           ))}
