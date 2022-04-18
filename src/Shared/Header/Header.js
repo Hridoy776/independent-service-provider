@@ -12,8 +12,7 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    
-      <Navbar
+    <Navbar
       collapseOnSelect
       expand="lg"
       sticky="top"
@@ -27,8 +26,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="home#services">services</Nav.Link>
+            <Nav.Link href="home#packages">Pricing</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -57,7 +56,9 @@ const Header = () => {
               About me
             </Nav.Link>
             {user ? (
-              <button onClick={handleSignOut}>signOut</button>
+              <button className=" btn-sign-out " onClick={handleSignOut}>
+                signOut
+              </button>
             ) : (
               <Nav.Link as={NavLink} to="/login">
                 {" "}
@@ -68,8 +69,6 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    
-    
   );
 };
 

@@ -48,8 +48,8 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </section>
-      <section className="container">
-        <h1>services</h1>
+      <section id="services" className="container">
+        <h1 className="common text-center my-5">services</h1>
         <Row xs={1} md={2} lg={3} className="g-4">
           {services.map((service) => (
             <Services key={service.id} service={service}></Services>

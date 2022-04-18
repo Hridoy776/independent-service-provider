@@ -60,7 +60,7 @@ const Login = () => {
           <img className="w-100" src={login} alt="" />
           </div>
         <div className="w-75 mx-auto">
-        <h1 className="text-center text-primary">login</h1>
+        <h1 className="text-center common">login</h1>
         <Form className="w-lg-25 w-50 mx-auto" onSubmit={handleSignIn}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -81,18 +81,18 @@ const Login = () => {
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <button className="common-btn"  type="submit">
             login
-          </Button>
+          </button>
           
         </Form>
         <p className="text-center">
           new to parfect passion?
-          <Link className="pe-auto text-decoration-none text-primary" onClick={navigateSignUp} to="/register">
+          <Link className="pe-auto text-decoration-none common" onClick={navigateSignUp} to="/register">
             please signup
           </Link>
         </p>
-        <p className="text-center">Forget password?<span onClick={resetPassword} className="btn btn-link pe-auto text-decoration-none text-primary">reset password</span></p>
+        <p className="text-center">Forget password?<span onClick={resetPassword} className="btn btn-link pe-auto text-decoration-none common">reset password</span></p>
         </div>
         
       </div>

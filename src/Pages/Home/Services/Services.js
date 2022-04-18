@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
+import './Services.css'
 const Services = ({service}) => {
   
   const navigate =useNavigate()
@@ -17,7 +17,7 @@ const Services = ({service}) => {
           <Card.Title>{service.name}</Card.Title>
           <Card.Text>price: {service.price}</Card.Text>
           <Card.Text>{service.details}</Card.Text>
-          <p><button onClick={navigateCheckOut} className="btn btn-primary">more details</button></p>
+          <p><button onClick={navigateCheckOut} className="details-btn">more details</button></p>
         </Card.Body>
       </Card>
     </Col>

@@ -8,7 +8,7 @@ const AboutMe = () => {
                 <img className='rounded' src={hridoy} alt="" />
             </div>
             <div className='w-50 order-lg-1'>
-            <h1 className='text-primary'>This is MD Rakib Hasan Hridoy</h1>
+            <h1 className='common'>This is MD Rakib Hasan Hridoy</h1>
             <p>I am an student of Hstu under graduate Bsc in chemistry.My goal is to be an web developer and want to move my carrier in this field.in future i want to be start a stratup</p>
             </div>
             

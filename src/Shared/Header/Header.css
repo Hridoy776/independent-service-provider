@@ -1,7 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
-.title{
-    font-family: 'My Soul', cursive;
-    font-weight: 500;
-    font-size: 2rem;
-    color: rgb(233, 13, 233);
+@import url("https://fonts.googleapis.com/css2?family=My+Soul&display=swap");
+.title {
+  font-family: "My Soul", cursive;
+  font-weight: 500;
+  font-size: 2rem;
+  color: rgb(233, 13, 233);
+}
+.btn-sign-out {
+  margin-top: 5px;
+  color: white;
+  background-color: rgb(171, 2, 171);
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.common {
+  color: rgb(182, 10, 182)!important;
+}
+.common-div{
+    background-color: rgb(174, 22, 174) ;
+}
+.common-btn{
+    color: white;
+    background-color:rgb(171, 2, 171) ;
+    width: 120px;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border:none;
+   cursor: pointer;
+   border: 1px solid white;
 }

@@ -37,7 +37,7 @@ const Register = () => {
           <img className="w-100" src={signup} alt="" />
           </div>
       <div className="w-75 mx-auto">
-        <h1 className="text-primary text-center">signup</h1>
+        <h1 className="common text-center">signup</h1>
         <Form className="w-lg-25 w-50 mx-auto" onSubmit={handleSignUp}>
           <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>name</Form.Label>
@@ -56,11 +56,12 @@ const Register = () => {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           {errorElement}
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <button className="common-btn" type="submit">
+            sign up
+          </button>
         </Form>
-          <p className="text-center">already have an account?<Link onClick={navigatelogin} to="/login" >please login</Link></p>
+          <p className="text-center">already have an account?<Link
+          className="common pe-auto text-decoration-none" onClick={navigatelogin} to="/login" >please login</Link></p>
         
       </div>
     </div>
