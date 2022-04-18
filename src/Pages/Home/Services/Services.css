@@ -3,7 +3,8 @@
     color: white;
     background-color:rgb(171, 2, 171) ;
     width: 120px;
-    
+    position: absolute;
+    bottom: 20px;
     padding: 5px 15px;
     padding-bottom: 9px;
     border-radius: 15px;
@@ -16,4 +17,7 @@
     color: rgb(171, 2, 171);
     background-color: white;
     border: 1px solid rgb(171, 2, 171);
+}
+.service-card{
+    height: 550px;
 }
