@@ -30,7 +30,7 @@ const SocialLogin = () => {
             </div>
             <div className="d-flex justify-content-center align-items-center">
         <div className="my-3">
-          <button onClick={handleSignInWithGoogle} className="btn btn-primary">
+          <button onClick={handleSignInWithGoogle} className="common-bg btn text-white px-3">
             <img src={Google} alt="" />
             <span className="ms-2 h5">google signin </span>
           </button>

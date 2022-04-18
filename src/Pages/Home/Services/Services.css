@@ -1,10 +1,11 @@
 .details-btn{
-    
+    display: block;
     color: white;
     background-color:rgb(171, 2, 171) ;
     width: 120px;
-    height: 30px;
-    padding: 0 10px;
+    
+    padding: 5px 15px;
+    padding-bottom: 9px;
     border-radius: 15px;
     border:none;
    cursor: pointer;

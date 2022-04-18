@@ -56,7 +56,7 @@ const Register = () => {
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
           {errorElement}
-          <button className="common-btn" type="submit">
+          <button className="common-bg btn text-white px-3" type="submit">
             sign up
           </button>
         </Form>

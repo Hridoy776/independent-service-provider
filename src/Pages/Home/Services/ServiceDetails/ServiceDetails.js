@@ -8,9 +8,10 @@ const ServiceDetails = () => {
         navigate('/checkout')
     }
     return (
-        <div>
-            <h1>{serviceId}</h1>
-            <button onClick={navigateCheckOut}>checkout</button>
+        <div className='vh-100 container d-flex justify-content-center align-items-center'>
+            
+
+            <button className='common-bg btn text text-white px-3 ' onClick={navigateCheckOut}>checkout</button>
         </div>
     );
 };

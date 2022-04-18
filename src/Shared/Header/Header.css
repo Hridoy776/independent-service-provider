@@ -19,8 +19,8 @@
 .common {
   color: rgb(182, 10, 182)!important;
 }
-.common-div{
-    background-color: rgb(174, 22, 174) ;
+.common-bg{
+    background-color: rgb(174, 22, 174)!important ;
 }
 .common-btn{
     color: white;
