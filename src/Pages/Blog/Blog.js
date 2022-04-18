@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="vh-100  d-flex flex-column  align-items-center">
+    <div className="vh-100 my-5 d-flex flex-column  align-items-center">
       <h1 className="common text-center my-5">blog</h1>
       <div className="container my-4">
       <div class="row">

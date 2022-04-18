@@ -21,7 +21,7 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/home">
-          <span className="title">Parfect passion</span>
+          <span className="title">Perfect passion</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -38,9 +38,6 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/blog">
               {" "}
               Blog
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/packages">
-              Packages
             </Nav.Link>
             <Nav.Link as={NavLink} to="/aboutme">
               About me
