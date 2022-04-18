@@ -4,17 +4,24 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
 import signup from "../../images/login/6333213.jpg"
+import SocialLogin from "../../Shared/SocialLogIn/SocialLogin";
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
-
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true});
+     let errorElement;
     const navigate=useNavigate()
     const navigatelogin=()=>{
         navigate('/login')
+    }
+    if(user){
+      navigate('/home')
+    }
+    if(error){
+      errorElement=<p className="text-danger">{error?.message}</p>
     }
     const handleSignUp=(e)=>{
         e.preventDefault()
@@ -24,7 +31,8 @@ const Register = () => {
         createUserWithEmailAndPassword(email,password)
     }
   return (
-    <div className=" d-sm-flex container justify-content-center align-items-center align-items-center vh-100 ">
+    <div className="vh-100 d-flex flex-column justify-content-center">
+      <div className=" d-sm-flex container justify-content-center align-items-center align-items-center  ">
       <div className="w-50 mx-auto">
           <img className="w-100" src={signup} alt="" />
           </div>
@@ -47,6 +55,7 @@ const Register = () => {
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
+          {errorElement}
           <Button variant="primary" type="submit">
             Submit
           </Button>
@@ -54,6 +63,8 @@ const Register = () => {
           <p className="text-center">already have an account?<Link onClick={navigatelogin} to="/login" >please login</Link></p>
         
       </div>
+    </div>
+      {<SocialLogin></SocialLogin>}
     </div>
   );
 };
